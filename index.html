@@ -5,53 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <div class="container">
-        <!-- Left Column: Profile, Introduction, Social Links -->
-        <div class="left-column">
-            <section id="profile">
-                <img src="imgs/IMG_6391.jpeg" alt="Your Name" style="width: 400; height: 300;">
-                <div class="name-pronoun">
-                    <h1>Yu Lin</h1>
-                    <span class="pronoun">(He/Him)</span> <!-- Add your preferred pronouns here -->
-                </div>
-                <p>Hi there partner!</p>
-                <ul class="social-links">
-                    <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
-                    <!-- Add more social links as needed -->
-                </ul>
-            </section>
-        </div>
-
-        <!-- Right Column: Other Sections -->
-        <div class="right-column">
-            <section id="projects">
-                <h2>About Me</h2>
-                <div class="project">
-                    <h3>Project Title 1</h3>
-                    <p>Description of the project.</p>
-                    <a href="project-link.html">View Project</a>
-                </div>
-                <!-- Add more projects similarly -->
-            </section>
-
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Skill 1</li>
-                    <li>Skill 2</li>
-                    <!-- Add more skills -->
-                </ul>
-            </section>
-
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-                <!-- Add other contact methods -->
-            </section>
-        </div>
+<div class="container">
+    <div class="left-column">
+        <section id="profile">
+            <img src="imgs/IMG_6391.jpeg" alt="Your Name">
+            <div class="name-pronoun">
+                <h1>Yu Lin</h1>
+                <span class="pronoun">(He/Him)</span>
+            </div>
+            <p class="greeting">Hi there partner!</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/ylin62" target="_blank"><i class="fab fa-github"></i></a></li>
+                <!-- <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a></li> -->
+            </ul>
+        </section>
     </div>
-</body>
+
+    <div class="right-column">
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                I am a data-driven professional with a strong background in data science and engineering, 
+                specializing in identifying and unlocking value through data-driven solutions. 
+                My expertise lies in analyzing complex datasets to solve current and potential future problems, 
+                and in discovering ways to enhance products and business processes through data. 
+                I possess superb learning skills, allowing me to quickly and deeply grasp new concepts, 
+                whether independently or with guidance, 
+                and effectively translate newly acquired knowledge into actionable production solutions. 
+                I posses strength in leveraging data to drive strategic decision-making and create impactful results for organizations. 
+                I am eager to apply my skills in diverse industries where data plays a crucial role in innovation and growth.
+            </p>
+        </section>
+
+        <!-- Experiences Section -->
+        <section id="experiences">
+            <h2>Experiences</h2>
+        
+            <div class="experience">
+                <h3>Lead System Engineer, Powertrain Data</h3>
+                <p><strong>Lucid Motors, Newark, CA</strong> - Mar. 2021 – Jan. 2024</p>
+                <ul>
+                    <li>Founded and led the Powertrain Data Team, expanding it from a one-person operation to a robust team of seven data engineers and data scientists.</li>
+                    <li>Designed and implemented a scalable data management system on AWS using Apache Spark and Apache Airflow, reducing data retrieval times significantly.</li>
+                    <li>Developed and deployed a machine learning-based anomaly detection model, enhancing early defect detection and preventing potential recalls.</li>
+                    <li>Conducted in-depth analysis of large-scale drive unit manufacturing data, delivering actionable insights that drove continuous improvement strategies.</li>
+                </ul>
+            </div>
+        
+            <div class="experience">
+                <h3>Research Engineer II at NHTSA Vehicle Research and Test Center (VRTC)</h3>
+                <p><strong>Transportation Research Center Inc., East Liberty, OH</strong> - Oct. 2019 – Feb. 2021</p>
+                <ul>
+                    <li>Developed a suite of data processing and analysis tools for autonomous driving research, advancing VRTC’s safety research capabilities.</li>
+                    <li>Created traffic scenario models and extraction algorithms using machine learning, establishing a framework for generating autonomous driving test scenarios.</li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project.</p>
+                <img src="project1-snapshot.jpg" alt="Project 1 Snapshot" class="project-image">
+                <p><a href="https://github.com/yourusername/project1" target="_blank">View Project</a></p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Brief description of the project.</p>
+                <img src="project2-snapshot.jpg" alt="Project 2 Snapshot" class="project-image">
+                <p><a href="https://github.com/yourusername/project2" target="_blank">View Project</a></p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Programming Languages: Python, SQL, MATLAB/Simulink</li>
+                <li>Data Tools: Pandas, Docker, ETL, Tableau, Grafana</li>
+                <li>Big Data Technologies: Apache Spark, Apache Airflow, Apache Iceberg, Database Design</li>
+                <li>Machine Learning: Scikit-Learn, PyTorch</li>
+                <li>Cloud & DevOps: Amazon Web Services (AWS), Git, Gitlab-CI/CD</li>
+                <li>Databases: PostgreSQL, InfluxDB, Trino/Presto</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Leadership: Proven ability to lead teams and manage projects from concept to completion</li>
+                <li>Mentorship: Experienced in mentoring junior engineers and fostering their professional growth</li>
+                <li>Team Building: Successfully built and expanded teams, creating a collaborative and productive work environment</li>
+                <li>Cross-Team Collaboration: Skilled in working across departments to align goals and drive successful outcomes</li>
+                <li>Communication: Strong verbal and written communication skills, adept at translating complex data into actionable insights</li>
+                <li>Problem Solving: Proficient in identifying and addressing challenges with creative and effective solutions</li>
+            </ul>
+        </section>
+        
+        
+        <!-- Contact Information Section -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>Download my resume: <a href="resume.pdf" download>Click here</a></p>
+        </section>
+    </div>
+</div>
 </html>
